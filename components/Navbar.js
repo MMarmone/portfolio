@@ -9,7 +9,7 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      Name: "About Me",
+      name: "About me",
       link: "aboutMe",
     },
     {
@@ -35,7 +35,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-gray-800 fixed nav">
+    <div className="flex justify-between shadow-md items-center w-full h-20 px-4 text-white bg-gray-800 fixed nav">
       <div>
         <div className="ml-4">
           <a
