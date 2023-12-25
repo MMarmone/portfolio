@@ -59,9 +59,13 @@ h3 {
 }
 
 section {
-  @apply flex text-white h-screen w-full
+  @apply flex justify-center text-white h-screen w-full
 }
 
+.content-div{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 /* Styles pour les écrans de taille "sm" et en dessous (600px) */
 @media only screen and (max-width: 600px) {

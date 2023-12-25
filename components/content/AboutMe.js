@@ -6,7 +6,7 @@ const AboutMe = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     return <section id="aboutMe">
-        <div>
+        <div className='content-div'>
             <h1 className="w-full">About Me</h1>
             <div class="grid grid-cols-3 gap-2">
                 <div class="col-span-2">

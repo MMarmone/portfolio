@@ -2,7 +2,7 @@ import React from 'react';
 
 const Introduction = () => {
     return <section>
-        <div className='flex items-center'>
+        <div className='content-div'>
             <div>
                 <h3 className='font-bold' style={{'color' :'#a7a084'}}>
                     Hey, I'm 
