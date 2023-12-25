@@ -8,7 +8,7 @@ const Introduction = () => {
                     Hey, I'm 
                 </h3>
                 <h1 className='font-bold typing-text'  style={{'color' :'#a7a084'}}>
-                Michel Marmone Marini
+                Michel Marmone Marini.
                 </h1>
                 <h2 className='font-bold text-gray-500'>
                     I build backend java applications.

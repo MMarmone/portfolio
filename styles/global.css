@@ -59,7 +59,7 @@ h3 {
 }
 
 section {
-  @apply flex justify-center text-white h-screen w-full
+  @apply flex justify-center items-center dark:text-white h-screen w-full mx-auto
 }
 
 .content-div{
@@ -85,5 +85,7 @@ section {
 
 /* Styles pour les écrans de taille "xl" (1201px) et au-dessus */
 @media only screen and (min-width: 1201px) {
-
+  section{
+    width: 1000px;
+  }
 }

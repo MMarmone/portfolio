@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from 'next/image'
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -58,6 +59,7 @@ const Navbar = () => {
             <Link href={link}>{name}</Link>
           </li>
         ))}
+        <li><DarkModeToggle /></li>
       </ul>
 
       <div
@@ -79,6 +81,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li><DarkModeToggle /></li>
         </ul>
       )}
     </header>
