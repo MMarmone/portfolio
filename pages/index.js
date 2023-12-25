@@ -16,9 +16,11 @@ export default function Home() {
       </Head>
       <div >
         <Layout>
-          <main className="mt-20 p-20 bg-gray-800 main">
-            <Introduction/>
-            <AboutMe/>
+          <main className="flex-grow bg-gray-800 main ">
+            <div>
+              <Introduction/>
+              <AboutMe/>
+            </div>
           </main>
         </Layout>
       </div>

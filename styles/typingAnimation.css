@@ -1,0 +1,35 @@
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1vw solid #a7a084; /* Couleur du curseur */
+    animation: typing 3s steps(20, end) forwards;
+}
+  
+  .cursor {
+    display: inline-block;
+    vertical-align: middle;
+    animation: cursor-blink 0.8s infinite;
+  }
+  
+  @keyframes typing {
+    from, to {
+      width: 0;
+    }
+    20% {
+        border-right: none; /* Maintenir le curseur visible à mi-chemin */
+    }
+    35% {
+      border-right: 1vw solid #a7a084; /* Maintenir le curseur visible à mi-chemin */
+    }
+    60% {
+        border-right: none; /* Maintenir le curseur visible à mi-chemin */
+      }
+    75% {
+        border-right: 1vw solid #a7a084; /* Maintenir le curseur visible à mi-chemin */
+      }
+    100% {
+      width: 100%;
+      border-right: none; /* Supprimer le curseur une fois le texte tapé entièrement */
+    }
+  }

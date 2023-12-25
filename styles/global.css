@@ -39,7 +39,47 @@ img {
   top:0
 }
 
-.main{
-  /*margin-left: 2rem;
-  margin-right: 2rem;*/
+h1 {
+  font-size: clamp(2rem, 6vw, 5rem);
+  color:#a7a084;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.3rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(0.8rem, 4vw, 2rem);
+}
+
+.main {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+section {
+  @apply flex text-white h-screen w-full
+}
+
+
+/* Styles pour les écrans de taille "sm" et en dessous (600px) */
+@media only screen and (max-width: 600px) {
+  .main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+/* Styles pour les écrans de taille "md" (601px) à "lg" (1200px) */
+/*@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+/* Styles pour les écrans de taille "xl" (1201px) et au-dessus */
+@media only screen and (min-width: 1201px) {
+
 }

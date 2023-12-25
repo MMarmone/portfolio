@@ -15,7 +15,7 @@ const Navbar = () => {
     {
       id: 2,
       name: "Experience",
-      link: "experience"
+      link: "#experience"
     },
     {
       id: 3,
@@ -24,18 +24,13 @@ const Navbar = () => {
     },
     {
       id: 4,
-      name:"Register",
-      link: "#register"
-    },
-    {
-      id: 5,
       name:"Resume",
       link: "cv.pdf",
     }
   ];
 
   return (
-    <header className="flex justify-between shadow-md items-center w-full h-20 px-4 text-white bg-gray-800 fixed nav">
+    <header className="flex justify-between shadow-xl items-center w-full h-20 px-4 text-white bg-gray-800 fixed nav z-10">
       <div>
         <div className="ml-4">
           <a
