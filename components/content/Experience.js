@@ -3,8 +3,8 @@ import Tabs from '../Tabs';
 
 
 const Experience = () => {
-    return <section id="experience">
-        <div className='content-div'>
+    return <section id="experience" className='pt-40'>
+        <div >
             
             <Tabs></Tabs>
 

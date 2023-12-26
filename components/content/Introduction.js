@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Introduction = () => {
-    return <section>
+    return <section id='intro'>
         <div className='content-div'>
             <div>
                 <h3 className='font-bold' style={{'color' :'#a7a084'}}>

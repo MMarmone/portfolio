@@ -65,6 +65,11 @@ section {
   @apply flex justify-center items-center dark:text-white h-screen w-full mx-auto
 }
 
+#experience{
+  margin-top: 0;
+  display: block;
+}
+
 .content-div{
   margin-top: auto;
   margin-bottom: auto;
