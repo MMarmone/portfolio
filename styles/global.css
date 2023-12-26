@@ -68,6 +68,7 @@ section {
 #experience{
   margin-top: 0;
   display: block;
+  
 }
 
 .content-div{
@@ -80,6 +81,12 @@ section {
   .main {
     padding-left: 5vw;
     padding-right: 5vw;
+  }
+
+  #experience{
+    margin-top: 0;
+    display: block;
+    height: 130vh;
   }
 }
 

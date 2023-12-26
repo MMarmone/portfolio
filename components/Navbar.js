@@ -52,17 +52,22 @@ const Navbar = () => {
         {links.map(({ id, link, name }) => (
           <li
             key={id}
-            className={`${name === 'Resume' ? 'rounded-lg border-ac9c80 border border-solid text-ac9c80' : 'text-gray-500' } nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline`}
+            className={`${name === 'Resume' ? 'rounded-lg border-secondcolor border border-solid text-secondcolor' : 'text-gray-500' } nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline`}
           >
             <Link href={link}>{name}</Link>
           </li>
         ))}
-        <div className="items-center border-l border-slate-200 ml-6 pl-6">
+        <div className="items-center border-l border-slate-200 m-auto ml-6 pl-6">
           <li className="text-gray-500 hover:scale-105 hover:text-gray-800 hover:text-white duration-200">
             <DarkModeToggle />
           </li>
         </div>
       </ul>
+      <div className="md:hidden ml-auto mr-3 pr-3">
+          <div className="text-gray-500 hover:scale-105 hover:text-gray-800 hover:text-white duration-200">
+            <DarkModeToggle size={25}/>
+          </div>
+          </div>
       <div
         onClick={() => setNav(!nav)}
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
@@ -71,6 +76,7 @@ const Navbar = () => {
       </div>
       {nav && (
         <>
+        
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
             {links.map(({ id, link, name }) => (
               <li

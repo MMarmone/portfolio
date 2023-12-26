@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaRegSun, FaRegMoon } from "react-icons/fa";
 
-const DarkModeToggle = () => {
+const DarkModeToggle = ({size}) => {
   const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
@@ -23,7 +23,7 @@ const DarkModeToggle = () => {
       className={`flex items-center justify-center ${darkMode ? 'bg-opacity-50' : 'bg-opacity-100'}`}
       onClick={toggleDarkMode}
     >
-                {darkMode ? <FaRegMoon/> : <FaRegSun/>}
+                {darkMode ? <FaRegMoon size={size}/> : <FaRegSun size={size}/>}
     </button>
   );
 };

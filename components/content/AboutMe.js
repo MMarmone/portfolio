@@ -6,6 +6,20 @@ const AboutMe = () => {
 
     const [isHovered, setIsHovered] = useState(false);
 
+    const javaTech = [
+        {icon:"",name:"Spring boot"},{icon:"",name:"Maven"},{icon:"",name:"hibernates/jetty"}
+    ]
+
+    const dataBaseTech = [
+        {icon:"",name:"MySql"},{icon:"",name:"MongoDb"},{icon:"",name:"Elastisearch"}
+    ]
+
+    const deploymentTech = [
+        {icon:<FaDocker/>,name:"Docker"},
+        {icon:"",name:"Kubernetes"},
+        {icon:<FaGitlab/>,name:"GitlabCi"}
+    ]
+
     return <section id="aboutMe">
         <div className='content-div'>
             <div className='flex items-center'>
@@ -16,7 +30,7 @@ const AboutMe = () => {
                 <div className="col-span-2">
                 Passionate software engineer in Sophia Antipolis, France, specializing in back-end development. Committed to crafting robust solutions and staying ahead in evolving technologies. Let's build the future together!                    <div className="m-3 border-t border-gray-300 h-px"></div>
                     <ul className="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
-                        <li key="1" className="pb-3 sm:pb-4 hover:bg-ac9c80">
+                        <li key="1" className="pb-3 sm:pb-4 hover:bg-secondcolor hover:bg-opacity-30">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaJava />
@@ -25,8 +39,10 @@ const AboutMe = () => {
                                     <p className="font-medium truncate">
                                     Java
                                     </p>
-                                    <p className="text-sm truncate ">
-                                    Spring boot, Maven, hibernates/jetty
+                                    <p className="flex text-sm truncate ">
+                                    {javaTech.map(({icon, name},index) =>
+                                        <span key={index} class="flex bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{icon} {name}</span> 
+                                    )}
                                     </p>
                                 </div>
                                 <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
@@ -34,7 +50,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className="py-3 sm:py-4 hover:bg-ac9c80">
+                        <li className="py-3 sm:py-4 hover:bg-secondcolor hover:bg-opacity-30">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaJs />
@@ -44,7 +60,9 @@ const AboutMe = () => {
                                     JavaScript
                                     </p>
                                     <p className="flex text-sm truncate ">
-                                    <FaReact />&nbsp;ReactJs/NextJs,&nbsp;<FaNodeJs/>&nbsp;NodeJs, npm
+                                    <span class="flex bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"><FaReact />&nbsp;ReactJs/NextJs</span> 
+                                    <span class="flex bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"><FaNodeJs/>&nbsp;NodeJs</span> 
+                                    <span class="flex bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">npm</span> 
                                     </p>
                                 </div>
                                 <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
@@ -52,7 +70,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className="py-3 sm:py-4 hover:bg-ac9c80">
+                        <li className="py-3 sm:py-4 hover:bg-secondcolor hover:bg-opacity-30">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaDev />
@@ -62,12 +80,14 @@ const AboutMe = () => {
                                     Deployments
                                     </p>
                                     <p className="flex text-sm truncate">
-                                    <FaDocker/>&nbsp;Docker, Kubernetes,&nbsp;<FaGitlab/>&nbsp;GitlabCi
+                                    {deploymentTech.map(({icon, name},index) =>
+                                        <span key={index} class="flex bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{icon} {name}</span> 
+                                    )}
                                     </p>
                                 </div>
                             </div>
                         </li>
-                        <li className="py-3 sm:py-4 hover:bg-ac9c80">
+                        <li className="py-3 sm:py-4 hover:bg-secondcolor hover:bg-opacity-30">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaDatabase />
@@ -77,7 +97,9 @@ const AboutMe = () => {
                                     Databases
                                     </p>
                                     <p className="flex text-sm truncate">
-                                    MySql, MongoDb, Elastisearch
+                                    {dataBaseTech.map(({icon, name}, index) =>
+                                        <span key={index} class="flex bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{icon} {name}</span> 
+                                    )}
                                     </p>
                                 </div>
                             </div>

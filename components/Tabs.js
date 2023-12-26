@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Tab = ({ label, active, onClick }) => (
   <div
-    className={`flex cursor-pointer rounded-lg border-white border border-solid py-2 px-2 border-b ${active ? 'border-green-500' : 'border-gray-300'} ${active ? 'bg-ac9c80' : ''}`}
+    className={`flex justify-center cursor-pointer ml-2 rounded-lg min-w-[75px] border-white border border-solid py-2 px-2 border-b ${active ? 'bg-secondcolor' : ''}`}
     onClick={(e) => {
       onClick();
       e.preventDefault();
@@ -20,9 +20,9 @@ const Tabs = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row ">
       {/* Onglets */}
-      <div className="flex-column h-full space-y space-y-4 text-sm font-medium md:me-4 mb-4 md:mb-0">
+      <div className="flex md:flex-col h-full md:space-y md:space-y-4 text-sm font-medium md:me-4 mb-4 md:mb-0">
         <Tab label="Sii" active={activeTab === 1} onClick={() => handleTabClick(1)} />
         <Tab label="Sictiam" active={activeTab === 2} onClick={() => handleTabClick(2)} />
         <Tab label="Orange" active={activeTab === 3} onClick={() => handleTabClick(3)} />
@@ -32,7 +32,7 @@ const Tabs = () => {
       <div className="p-4 min-h-full">
         {/* Contenu du Tab 1 */}
         {activeTab === 1 && <div className="min-h-full">
-          <h3 className='font-bold text-ac9c80' >Consultant at Orange</h3>
+          <h3 className='font-bold text-secondcolor' >Consultant at Orange</h3>
           <p className='text-gray-300 italic'>2 years and 3 months (Ongoing) | SII, Sophia Antipolis</p>
           <br/>
             Since joining SII as a consultant at Orange, I've been immersed in a challenging and dynamic role. Focused on an application central to handling Orange metadata, my responsibilities extend across various aspects:
@@ -52,7 +52,7 @@ const Tabs = () => {
         Working within a stimulating team, my journey at SII has been marked by continuous learning and impactful decision-making.</div>}
         {/* Contenu du Tab 2 */}
         {activeTab === 2 && <div className="min-h-full">
-        <h3 className='font-bold text-ac9c80' >Full Stack Developer </h3> 
+        <h3 className='font-bold text-secondcolor' >Full Stack Developer </h3> 
         <p className='text-gray-300 italic'>1-year Role | SICTIAM</p>
         <br></br>
         As a Full Stack Developer at SICTIAM, I navigated a diverse range of projects, contributing of three distinct applications:
@@ -76,7 +76,7 @@ const Tabs = () => {
 
         {/* Contenu du Tab 3 */}
         {activeTab === 3 && <div className="min-h-full">
-          <h3 className='font-bold text-ac9c80' >Software Engineering Intern </h3>
+          <h3 className='font-bold text-secondcolor' >Software Engineering Intern </h3>
           <p className='text-gray-300 italic'>5-month Internship | Orange, Sophia Antipolis</p>
           <br></br>
           I had the privilege of interning at Orange in Sophia Antipolis, where I played a pivotal role in shaping the architecture of an internal testing application. My responsibilities included delving into <span className='font-bold'>Java Spring Boot and Angular</span>, actively contributing to the development process.
