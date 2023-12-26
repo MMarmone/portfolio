@@ -18,6 +18,9 @@ body {
     Fira Sans,
     Droid Sans,
     Helvetica Neue,
+    Source Serif Pro, 
+    Georgia, 
+    serif
     sans-serif;
 }
 
@@ -88,4 +91,17 @@ section {
   section{
     width: 1000px;
   }
+}
+
+/* styles.css */
+.theme-dark {
+  /* Styles pour le thème sombre */
+  background-color: #1e2734;
+  color: #fff;
+}
+
+.theme-light {
+  /* Styles pour le thème clair */
+  background-color: #fff;
+  color: #333;
 }

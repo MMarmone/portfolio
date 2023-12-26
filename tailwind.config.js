@@ -10,6 +10,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'fontSerif': ['Source Serif Pro', 'Georgia', 'serif'],
+      body: ['Source Serif Pro', 'Georgia', 'serif'],
+    },
     extend: {
       colors: {
         dark: '#1a1a1a',
