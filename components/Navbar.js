@@ -52,7 +52,7 @@ const Navbar = () => {
         {links.map(({ id, link, name }) => (
           <li
             key={id}
-            className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
+            className={`${name === 'Resume' ? 'rounded-lg border-ac9c80 border border-solid text-ac9c80' : 'text-gray-500' } nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline`}
           >
             <Link href={link}>{name}</Link>
           </li>

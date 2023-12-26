@@ -17,7 +17,7 @@ const AboutMe = () => {
                     I'm a passionate software engineer based in the vibrant tech hub of Sophia Antipolis, France. With a solid foundation from my master's degree and three years of professional experience, I specialize in the intricate world of back-end development. My commitment to crafting robust, efficient solutions is matched only by my enthusiasm for staying at the forefront of evolving technologies. Let's build the future together!
                     <div className="m-3 border-t border-gray-300 h-px"></div>
                     <ul className="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
-                        <li key="1" className="pb-3 sm:pb-4 hover:bg-gray-700">
+                        <li key="1" className="pb-3 sm:pb-4 hover:bg-ac9c80">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaJava />
@@ -35,7 +35,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className="py-3 sm:py-4 hover:bg-gray-700">
+                        <li className="py-3 sm:py-4 hover:bg-ac9c80">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaJs />
@@ -53,7 +53,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className="py-3 sm:py-4 hover:bg-gray-700">
+                        <li className="py-3 sm:py-4 hover:bg-ac9c80">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaDev />
@@ -68,7 +68,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                         </li>
-                        <li className="py-3 sm:py-4 hover:bg-gray-700">
+                        <li className="py-3 sm:py-4 hover:bg-ac9c80">
                             <div className="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div>
                                     <FaDatabase />

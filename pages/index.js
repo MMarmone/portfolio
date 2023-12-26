@@ -16,7 +16,7 @@ export default function Home() {
         />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"/>
       </Head>
-      <div className='fontSerif'>
+      <div className='fontserif'>
         <ThemeProvider>
           <Layout>
             <main className="flex-grow dark:bg-gray-800 main">

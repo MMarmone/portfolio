@@ -11,12 +11,13 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'fontSerif': ['Source Serif Pro', 'Georgia', 'serif'],
+      'fontserif': ['Source Serif Pro', 'Georgia', 'serif'],
       body: ['Source Serif Pro', 'Georgia', 'serif'],
     },
     extend: {
       colors: {
         dark: '#1a1a1a',
+        ac9c80: '#ac9c80',
       },
     },
   },
