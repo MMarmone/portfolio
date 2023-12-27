@@ -31,7 +31,8 @@ const Introduction = () => {
     <button className='flex flex-col justify-center m-auto w-10 moving-object-container rounded-full border-secondcolor border border-solid text-secondcolor p-2 '
             onClick={scrollToSection}>
         <FaArrowDown className='moving-object'/>
-    </button></>
+    </button>
+    </>
 }
 
 export default Introduction;
