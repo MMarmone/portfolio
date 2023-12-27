@@ -9,9 +9,9 @@ const medias = [
   ]
 
 const Footer = () => (<footer>
-<div className="md:flex jusify-center flex-block bottom-0 p-3 ">
+<div className="flex flex-col md:flex-row bottom-0 p-3 ">
       <div className='flex ml-auto mr-auto dark:text-white text-black'>Made in React/NextJs by me with &nbsp;<FaHeart/></div>
-      <div className="md:hiddenflex jusify-center mx-auto">
+      <div className="md:hidden mr-auto ml-auto mt-2">
           <nav >
           {medias.map(({ link, icon, index }) => (
             <a key={index} href={link} className="inline-block mb-1">
