@@ -76,6 +76,10 @@ section {
   margin-bottom: auto;
 }
 
+#introduction{
+  height: 90vh;
+}
+
 /* Styles pour les écrans de taille "sm" et en dessous (600px) */
 @media only screen and (max-width: 600px) {
   .main {
@@ -88,6 +92,7 @@ section {
     display: block;
     height: 130vh;
   }
+
 }
 
 /* Styles pour les écrans de taille "md" (601px) à "lg" (1200px) */

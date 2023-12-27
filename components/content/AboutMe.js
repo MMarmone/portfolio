@@ -1,11 +1,7 @@
-import { useState } from 'react';
-import Image from 'next/image'
 import { FaJava, FaDocker,FaReact, FaNodeJs, FaJs, FaDev,FaGitlab, FaDatabase } from "react-icons/fa";
 import ScrollRevealImage from '../animation/ScrollRevealImage';
 
 const AboutMe = () => {
-
-    
 
     const javaTech = [
         {icon:"",name:"Spring boot"},{icon:"",name:"Maven"},{icon:"",name:"hibernates/jetty"}

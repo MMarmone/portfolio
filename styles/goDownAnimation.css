@@ -1,0 +1,25 @@
+.moving-object-container {
+    position: relative;
+    height: 70px; /* Hauteur de la zone de déplacement */
+}
+  
+.moving-object {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: moveUpDown 2s linear infinite; /* 2s pour la durée de l'animation, linear pour une vitesse constante, infinite pour répéter en boucle */
+}
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(-20px); /* Position initiale (en haut) */
+    }
+    50% {
+      transform: translateY(5px); /* Position en bas */
+      opacity: 0.5;
+    }
+    100%{
+        transform: translateY(20px); /* Position en bas */
+        opacity: 0.25;
+    }
+  }
