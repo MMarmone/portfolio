@@ -17,13 +17,13 @@ animation: cursor-blink 0.8s infinite;
         width: 0;
     }
     20% {
-        border-right: none; /* Maintenir le curseur visible à mi-chemin */
+        border-right: 1vw solid #a7a084; /* Maintenir le curseur visible à mi-chemin */
     }
     35% {
         border-right: 1vw solid #a7a084; /* Maintenir le curseur visible à mi-chemin */
     }
     60% {
-        border-right: none; /* Maintenir le curseur visible à mi-chemin */
+        border-right: 1vw solid #a7a084; /* Maintenir le curseur visible à mi-chemin */
     }
     75% {
         border-right: 1vw solid #a7a084; /* Maintenir le curseur visible à mi-chemin */
