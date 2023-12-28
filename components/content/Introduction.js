@@ -4,9 +4,9 @@ import { FaArrowDown } from "react-icons/fa";
 const scrollToSection = () => {
     // Remplacez 'sectionId' par l'ID de la section vers laquelle vous souhaitez faire défiler.
     const section = document.getElementById('aboutMe');
-
+    
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({ top: (section.offsetTop - 40), behavior: 'smooth' });
     }
   };
 

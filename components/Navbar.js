@@ -4,6 +4,15 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Image from 'next/image'
 import DarkModeToggle from "./theme/DarkModeToggle";
 
+const handleScroll = (event, link) => {
+  event.preventDefault();
+  const targetSection = document.getElementById(link.substring(1));
+  if (targetSection) {
+    const offset = targetSection.offsetTop - 80;
+    window.scrollTo({ top: offset, behavior: "smooth" });
+  }
+};
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const links = [
@@ -54,7 +63,7 @@ const Navbar = () => {
             key={id}
             className={`${name === 'Resume' ? 'rounded-lg border-secondcolor border border-solid text-secondcolor' : 'text-gray-500' } nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline`}
           >
-            <Link href={link}>{name}</Link>
+            <Link onClick={(event) => { handleScroll(event,link) }} href={link}>{name}</Link>
           </li>
         ))}
         <div className="items-center border-l border-slate-200 m-auto ml-6 pl-6">
@@ -83,7 +92,10 @@ const Navbar = () => {
                 key={id}
                 className="px-4 cursor-pointer capitalize py-6 text-4xl"
               >
-                <Link onClick={() => setNav(!nav)} href={link}>
+                <Link onClick={(event) => {
+                  setNav(!nav);
+                  handleScroll(event, link);
+                }} href={link}>
                   {name}
                 </Link>
               </li>

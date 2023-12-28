@@ -94,15 +94,22 @@ section {
   #experience{
     margin-top: 0;
     display: block;
-    min-height: 150vh
+    min-height: 130vh;
+    overflow: auto;
   }
   #aboutMe{
     margin-top: 10vh;
     margin-left:1vw;
     margin-right:3vw;
-    min-height: 110vh
+    min-height: 110vh;
   }
 
+}
+
+@media only screen and (orientation: landscape) {
+  section {
+    height: 120vw; 
+  }
 }
 
 /* Styles pour les écrans de taille "md" (601px) à "lg" (1200px) */
@@ -117,6 +124,7 @@ section {
 @media only screen and (min-width: 1201px) {
   section{
     width: 1000px;
+    height: 100vh;
   }
 }
 
