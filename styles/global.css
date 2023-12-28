@@ -95,7 +95,7 @@ section {
     margin-top: 0;
     display: block;
     min-height: 130vh;
-    overflow: auto;
+overflow: auto;
   }
   #aboutMe{
     margin-top: 10vh;
@@ -106,9 +106,13 @@ section {
 
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-height: 600px) {
   section {
     height: 120vw; 
+  }
+
+  #sidebar {
+    @apply hidden;
   }
 }
 

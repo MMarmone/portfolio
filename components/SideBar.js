@@ -13,7 +13,7 @@ const Sidebar = () => {
     {link:"https://twitter.com", icon:<FaTwitter/>, index:4}
   ]
   return (
-    <div className="flex ml-6 fixed left-0 bottom-12 p-5 hidden sm:block">
+    <div id="sidebar" className="flex ml-6 fixed left-0 bottom-12 p-5 hidden sm:block">
       <div>
           <nav >
           {medias.map(({ link, icon, index }) => (

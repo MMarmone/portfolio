@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from 'next/image'
 import DarkModeToggle from "./theme/DarkModeToggle";
@@ -28,8 +28,8 @@ const Navbar = () => {
     },
     {
       id: 3,
-      name:"Login",
-      link: "login"
+      name:"Contact Me",
+      link: "#contactMe"
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const Navbar = () => {
     }
   ];
   return (
-    <header className="flex justify-between shadow-xl items-center w-full h-20 px-4 text-white bg-gray-800 fixed nav z-10" >
+    <header className="flex justify-between shadow-xl items-center w-full h-10 sm:h-20 px-4 text-white bg-gray-800 fixed nav z-10" >
       <div>
         <div className="ml-4">
           <a
@@ -47,12 +47,14 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-             <Image
+            <div className="relative sm:w-16 sm:h-16 w-8 h-8">
+              <Image
                 src="/logo.png"
-                width={70}
-                height={70}
+                layout="fill"
+                objectFit="contain"
                 alt="Picture of the author"
               />
+            </div>
           </a>
         </div>
       </div>
