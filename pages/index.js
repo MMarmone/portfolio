@@ -3,8 +3,7 @@ import Layout from '../components/Layout';
 import AboutMe from '../components/content/AboutMe';
 import Experience from '../components/content/Experience';
 import Introduction from '../components/content/Introduction';
-import ThemeProvider from '../components/theme/ThemeProvider'
-import ContactForm from '../components/content/ContactForm';
+import ThemeProvider from '../components/theme/ThemeProvider';
 
 export default function Home() {
   return (
@@ -25,7 +24,6 @@ export default function Home() {
                 <Introduction/>
                 <AboutMe/>
                 <Experience/>
-                <ContactForm/>
               </div>
             </main>
           </Layout>
