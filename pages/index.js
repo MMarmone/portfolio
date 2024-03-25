@@ -4,14 +4,15 @@ import AboutMe from '../components/content/AboutMe';
 import Experience from '../components/content/Experience';
 import Introduction from '../components/content/Introduction';
 import ThemeProvider from '../components/theme/ThemeProvider'
+import ContactForm from '../components/content/ContactForm';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>PORTFOLIO</title>
+        <title>Michel Marmone Marini portfolio</title>
         <meta
-          name="description"
+          name="michel marmone marini"
           content="Mon Cv"
         />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"/>
@@ -24,6 +25,7 @@ export default function Home() {
                 <Introduction/>
                 <AboutMe/>
                 <Experience/>
+                <ContactForm/>
               </div>
             </main>
           </Layout>

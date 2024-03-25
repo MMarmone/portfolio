@@ -29,9 +29,9 @@ const Tabs = () => {
       </div>
 
       {/* Contenu des onglets */}
-      <div className="p-4 min-h-full">
+      <div className="flex p-4 overflow-auto h-full">
         {/* Contenu du Tab 1 */}
-        {activeTab === 1 && <div className="min-h-full">
+        {activeTab === 1 && <div className="overflow-auto max-h-[80%]">
           <h3 className='font-bold text-secondcolor' >Consultant at Orange</h3>
           <p className='text-gray-300 italic'>2 years and 3 months (Ongoing) | SII, Sophia Antipolis</p>
           <br/>

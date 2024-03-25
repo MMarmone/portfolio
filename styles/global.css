@@ -92,16 +92,15 @@ section {
   }
 
   #experience{
-    margin-top: 0;
     display: block;
     min-height: 130vh;
-overflow: auto;
   }
+
   #aboutMe{
     margin-top: 10vh;
     margin-left:1vw;
     margin-right:3vw;
-    min-height: 110vh;
+    min-height: 120vh;
   }
 
 }

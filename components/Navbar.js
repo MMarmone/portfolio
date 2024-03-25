@@ -8,7 +8,7 @@ const handleScroll = (event, link) => {
   event.preventDefault();
   const targetSection = document.getElementById(link.substring(1));
   if (targetSection) {
-    const offset = targetSection.offsetTop - 80;
+    const offset = targetSection.offsetTop - 40;
     window.scrollTo({ top: offset, behavior: "smooth" });
   }
 };
@@ -34,7 +34,7 @@ const Navbar = () => {
     {
       id: 4,
       name:"Resume",
-      link: "cv.pdf",
+      link: "/cv.pdf",
     }
   ];
   return (
@@ -65,7 +65,8 @@ const Navbar = () => {
             key={id}
             className={`${name === 'Resume' ? 'rounded-lg border-secondcolor border border-solid text-secondcolor' : 'text-gray-500' } nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline`}
           >
-            <Link onClick={(event) => { handleScroll(event,link) }} href={link}>{name}</Link>
+            {name === 'Resume' ? <a href={link}>{name}</a> :
+            <Link onClick={(event) => { handleScroll(event,link) }} href={link}>{name}</Link>}
           </li>
         ))}
         <div className="items-center border-l border-slate-200 m-auto ml-6 pl-6">
